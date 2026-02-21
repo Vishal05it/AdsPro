@@ -291,7 +291,6 @@
               <input
                 required
                 type="text"
-                name="name"
                 placeholder="Your Name"
                 class="contact-input w-full px-5 py-4 rounded-2xl text-slate-800"
               />
@@ -304,7 +303,6 @@
               <input
                 required
                 type="tel"
-                name="phone"
                 placeholder="+91 ..."
                 class="contact-input w-full px-5 py-4 rounded-2xl text-slate-800"
               />
@@ -317,7 +315,6 @@
                 >
                 <input
                   type="email"
-                  name="email"
                   placeholder="yourmail@example.com"
                   class="contact-input w-full px-5 py-4 rounded-2xl text-slate-800"
                 />
@@ -329,7 +326,6 @@
                 >
                 <input
                   type="url"
-                  name="video_link"
                   placeholder="YouTube URL"
                   class="contact-input w-full px-5 py-4 rounded-2xl text-slate-800"
                 />
@@ -843,7 +839,6 @@
                     <input
                       required
                       type="text"
-                      name="name"
                       placeholder="Your Name"
                       class="contact-input w-full px-5 py-4 rounded-2xl text-slate-800 font-medium"
                     />
@@ -856,7 +851,6 @@
                     <input
                       required
                       type="tel"
-                      name="phone"
                       placeholder="+91 ..."
                       class="contact-input w-full px-5 py-4 rounded-2xl text-slate-800 font-medium"
                     />
@@ -869,7 +863,6 @@
                   >
                   <input
                     type="email"
-                    name="email"
                     placeholder="yourmail@example.com"
                     class="contact-input w-full px-5 py-4 rounded-2xl text-slate-800 font-medium"
                   />
@@ -881,7 +874,6 @@
                   >
                   <textarea
                     rows="4"
-                    name="message"
                     placeholder="How can we help?"
                     class="contact-input w-full px-5 py-4 rounded-2xl text-slate-800 font-medium resize-none"
                   ></textarea>
@@ -985,8 +977,7 @@
         }
       }
 
-      //old removed
-      function oldHandleModalInquiry(e, formEl) {
+      function handleModalInquiry(e, formEl) {
         e.preventDefault();
         formEl.classList.add("hidden");
         document.querySelector(".modal-success-msg").classList.remove("hidden");
@@ -1028,47 +1019,6 @@
           );
           observer.observe(el);
         });
-    </script>
-
-    <script>
-      const SCRIPT_URL =
-        "https://script.google.com/macros/s/AKfycbzgEF606P9xUshTAD-TEw_0BjISgq_Mj18GD3_eZNr5DnubCTgVAbhSug9psRJQOvUp/exec";
-
-      async function sendToGoogleSheets(formEl) {
-        const formData = new FormData(formEl);
-        const data = Object.fromEntries(formData.entries());
-
-        await fetch(SCRIPT_URL, {
-          method: "POST",
-          body: JSON.stringify(data),
-          headers: { "Content-Type": "application/json" },
-          mode: "no-cors",
-        });
-      }
-
-      function handleModalInquiry(e, formEl) {
-        e.preventDefault();
-        sendToGoogleSheets(formEl)
-          .then(() => {
-            formEl.classList.add("hidden");
-            document
-              .querySelector(".modal-success-msg")
-              .classList.remove("hidden");
-          })
-          .catch(() => alert("Submission failed"));
-      }
-
-      function handleContactInquiry(e, formEl) {
-        e.preventDefault();
-        sendToGoogleSheets(formEl)
-          .then(() => {
-            formEl.classList.add("hidden");
-            document
-              .querySelector(".main-success-msg")
-              .classList.remove("hidden");
-          })
-          .catch(() => alert("Submission failed"));
-      }
     </script>
   </body>
 </html>
