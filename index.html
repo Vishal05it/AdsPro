@@ -745,112 +745,213 @@
           </p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-8 items-stretch">
-          <!-- Starter -->
+        <div
+          class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 py-5"
+        >
+          <!-- Plan A -->
           <div
-            class="glass-card rounded-[40px] overflow-hidden flex flex-col h-full bg-white"
+            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white"
           >
-            <div class="pricing-header-starter text-white text-center py-12">
+            <div class="pricing-header-starter text-white text-center py-10">
               <h4
-                class="text-sm font-black uppercase tracking-[0.2em] opacity-80 mb-2"
+                class="text-sm font-black uppercase tracking-widest opacity-80"
               >
-                Starter
+                Plan A
               </h4>
-              <div class="text-4xl font-black">₹ 7,900</div>
+              <div class="text-4xl font-black">₹ 250</div>
             </div>
-            <div class="p-10 flex-grow flex flex-col justify-between">
-              <ul class="space-y-4 text-left mb-10">
-                <li
-                  class="flex items-center text-sm font-medium text-slate-600"
-                >
-                  <span class="checkmark">✓</span> Target real audiences
+            <div class="p-8 flex flex-col justify-between h-full">
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-sm text-slate-600">
+                  <span class="checkmark">✓</span>1,000+ Views
                 </li>
-                <li
-                  class="flex items-center text-sm font-medium text-slate-600"
-                >
-                  <span class="checkmark">✓</span> Performance reports
-                </li>
-                <li
-                  class="flex items-center text-sm font-medium text-slate-600"
-                >
-                  <span class="checkmark">✓</span> Google Ads Compliant
+                <li class="flex items-center text-sm text-slate-600">
+                  <span class="checkmark">✓</span>Real Audience Reach
                 </li>
               </ul>
               <button
                 onclick="toggleModal()"
-                class="w-full bg-slate-900 text-white font-black py-4 rounded-2xl hover:bg-slate-800 shadow-xl transition"
+                class="w-full bg-slate-900 text-white py-3 rounded-xl font-bold"
               >
                 Select Plan
               </button>
             </div>
           </div>
 
-          <!-- Premium -->
+          <!-- Plan B -->
           <div
-            class="glass-card rounded-[40px] overflow-hidden flex flex-col h-full md:scale-105 z-10 bg-white shadow-2xl"
+            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white"
           >
-            <div class="pricing-header-premium text-white text-center py-14">
+            <div class="pricing-header-premium text-white text-center py-10">
               <h4
-                class="text-sm font-black uppercase tracking-[0.2em] opacity-80 mb-2"
+                class="text-sm font-black uppercase tracking-widest opacity-80"
               >
-                Premium
+                Plan B
               </h4>
-              <div class="text-5xl font-black">₹ 11,500</div>
+              <div class="text-4xl font-black">₹ 800</div>
             </div>
-            <div class="p-10 flex-grow flex flex-col justify-between">
-              <ul class="space-y-4 text-left mb-10">
-                <li class="flex items-center text-sm font-bold text-slate-800">
-                  <span class="checkmark">✓</span> Priority processing
+            <div class="p-8 flex flex-col justify-between h-full">
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-sm text-slate-600">
+                  <span class="checkmark">✓</span>5,000+ Views
                 </li>
-                <li class="flex items-center text-sm font-bold text-slate-800">
-                  <span class="checkmark">✓</span> Niche demographic targeting
-                </li>
-                <li class="flex items-center text-sm font-bold text-slate-800">
-                  <span class="checkmark">✓</span> Retention optimization
+                <li class="flex items-center text-sm text-slate-600">
+                  <span class="checkmark">✓</span>Better Reach Boost
                 </li>
               </ul>
               <button
                 onclick="toggleModal()"
-                class="w-full btn-gradient text-white font-black py-5 rounded-2xl shadow-xl transition-transform hover:scale-105"
+                class="w-full bg-slate-900 text-white py-3 rounded-xl font-bold"
+              >
+                Select Plan
+              </button>
+            </div>
+          </div>
+
+          <!-- Decision Plan -->
+          <div
+            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white"
+          >
+            <div class="pricing-header-pro text-white text-center py-10">
+              <h4
+                class="text-sm font-black uppercase tracking-widest opacity-80"
+              >
+                Decision Plan
+              </h4>
+              <div class="text-4xl font-black">₹ 1,500</div>
+            </div>
+            <div class="p-8 flex flex-col justify-between h-full">
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-sm text-slate-600">
+                  <span class="checkmark">✓</span>10,000+ Views
+                </li>
+                <li class="flex items-center text-sm text-slate-600">
+                  <span class="checkmark">✓</span>Strong Visibility
+                </li>
+              </ul>
+              <button
+                onclick="toggleModal()"
+                class="w-full bg-slate-900 text-white py-3 rounded-xl font-bold"
+              >
+                Select Plan
+              </button>
+            </div>
+          </div>
+
+          <!-- Starting Plan -->
+          <div
+            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white"
+          >
+            <div class="pricing-header-starter text-white text-center py-10">
+              <h4
+                class="text-sm font-black uppercase tracking-widest opacity-80"
+              >
+                Starting Plan
+              </h4>
+              <div class="text-4xl font-black">₹ 3,000</div>
+            </div>
+            <div class="p-8 flex flex-col justify-between h-full">
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-sm text-slate-600">
+                  <span class="checkmark">✓</span>20,000+ Views
+                </li>
+                <li class="flex items-center text-sm text-slate-600">
+                  <span class="checkmark">✓</span>Growth Boost
+                </li>
+              </ul>
+              <button
+                onclick="toggleModal()"
+                class="w-full bg-slate-900 text-white py-3 rounded-xl font-bold"
+              >
+                Select Plan
+              </button>
+            </div>
+          </div>
+
+          <!-- Walking Plan -->
+          <div
+            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white"
+          >
+            <div class="pricing-header-premium text-white text-center py-10">
+              <h4
+                class="text-sm font-black uppercase tracking-widest opacity-80"
+              >
+                Walking Plan
+              </h4>
+              <div class="text-4xl font-black">₹ 7,000</div>
+            </div>
+            <div class="p-8 flex flex-col justify-between h-full">
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-sm text-slate-600">
+                  <span class="checkmark">✓</span>50,000+ Views
+                </li>
+                <li class="flex items-center text-sm text-slate-600">
+                  <span class="checkmark">✓</span>High Engagement
+                </li>
+              </ul>
+              <button
+                onclick="toggleModal()"
+                class="w-full bg-slate-900 text-white py-3 rounded-xl font-bold"
+              >
+                Select Plan
+              </button>
+            </div>
+          </div>
+
+          <!-- Running Plan -->
+          <div
+            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white shadow-2xl"
+          >
+            <div class="pricing-header-pro text-white text-center py-12">
+              <h4
+                class="text-sm font-black uppercase tracking-widest opacity-80"
+              >
+                Running Plan
+              </h4>
+              <div class="text-4xl font-black">₹ 13,000</div>
+            </div>
+            <div class="p-8 flex flex-col justify-between h-full">
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-sm font-bold text-slate-800">
+                  <span class="checkmark">✓</span>1 Lakh+ Views
+                </li>
+                <li class="flex items-center text-sm font-bold text-slate-800">
+                  <span class="checkmark">✓</span>Mass Reach Campaign
+                </li>
+              </ul>
+              <button
+                onclick="toggleModal()"
+                class="w-full btn-gradient text-white py-4 rounded-xl font-black"
               >
                 Most Popular
               </button>
             </div>
           </div>
 
-          <!-- Pro -->
+          <!-- Flying Plan -->
           <div
-            class="glass-card rounded-[40px] overflow-hidden flex flex-col h-full bg-white"
+            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white"
           >
-            <div class="pricing-header-pro text-white text-center py-12">
+            <div class="pricing-header-premium text-white text-center py-12">
               <h4
-                class="text-sm font-black uppercase tracking-[0.2em] opacity-80 mb-2"
+                class="text-sm font-black uppercase tracking-widest opacity-80"
               >
-                Pro
+                Flying Plan
               </h4>
-              <div class="text-4xl font-black">₹ 14,400</div>
+              <div class="text-4xl font-black">₹ 1,20,000</div>
             </div>
-            <div class="p-10 flex-grow flex flex-col justify-between">
-              <ul class="space-y-4 text-left mb-10">
-                <li
-                  class="flex items-center text-sm font-medium text-slate-600"
-                >
-                  <span class="checkmark">✓</span> Strategy consultation
+            <div class="p-8 flex flex-col justify-between h-full">
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-sm text-slate-600">
+                  <span class="checkmark">✓</span>10 Lakh+ Views
                 </li>
-                <li
-                  class="flex items-center text-sm font-medium text-slate-600"
-                >
-                  <span class="checkmark">✓</span> Advanced performance mapping
-                </li>
-                <li
-                  class="flex items-center text-sm font-medium text-slate-600"
-                >
-                  <span class="checkmark">✓</span> Multi-video campaigns
+                <li class="flex items-center text-sm text-slate-600">
+                  <span class="checkmark">✓</span>Maximum Exposure
                 </li>
               </ul>
               <button
                 onclick="toggleModal()"
-                class="w-full bg-slate-900 text-white font-black py-4 rounded-2xl hover:bg-slate-800 shadow-xl transition"
+                class="w-full bg-slate-900 text-white py-4 rounded-xl font-bold"
               >
                 Select Plan
               </button>
@@ -863,7 +964,7 @@
     <!-- CONTACT SECTION -->
     <section
       id="contact"
-      class="section-curves py-24"
+      class="section-curves py-4"
       style="--section-bg: #f8fafc"
     >
       <div class="max-w-7xl mx-auto px-6">
