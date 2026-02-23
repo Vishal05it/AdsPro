@@ -448,17 +448,21 @@
             <div
               class="w-9 h-9 md:w-10 md:h-10 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-500 shadow-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-300"
             >
-              <svg
-                class="w-5 h-5 md:w-6 md:h-6 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
+              <svg viewBox="0 0 48 48" class="w-6 h-6 text-white">
+                <defs>
+                  <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#22d3ee" />
+                    <stop offset="100%" stop-color="#3b82f6" />
+                  </linearGradient>
+                </defs>
+
+                <!-- Circle background -->
+                <circle cx="24" cy="24" r="22" fill="url(#logoGrad)" />
+
+                <!-- Growth arrow -->
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2.5"
-                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                  d="M14 30 L24 18 L24 25 L34 15 L30 14 L34 10 L38 14 L34 18 L33 14 L24 24 L24 30 Z"
+                  fill="white"
                 />
               </svg>
             </div>
@@ -719,18 +723,17 @@
               Our Story
             </div>
             <h2 class="text-4xl font-bold text-slate-900 mb-6">
-              Built for the future of digital advertising.
+              AdsPro is designed to make YouTube advertising simple for
+              creators.
             </h2>
             <p class="text-lg text-slate-600 mb-6">
-              Founded in 2018, AdsPro started with a simple mission: to
-              eliminate guesswork from Google and YouTube ads. We believe every
-              dollar spent should be a dollar earned.
+              Instead of dealing with complicated dashboards or confusing
+              settings, AdsPro provides a guided workflow to set up Google Ads
+              campaigns with ease.
             </p>
             <p class="text-lg text-slate-600">
-              Today, we manage over $10M in annual ad spend for clients across
-              e-commerce, SaaS, and professional services. Our team of certified
-              analysts and creative directors work in tandem to ensure your
-              brand stands out.
+              We focus on transparency, ease of use, and tools that help
+              creators promote their content more efficiently.
             </p>
           </div>
           <div class="grid grid-cols-2 gap-4">
@@ -1005,12 +1008,13 @@
                 </li>
               </ul>
               <div class="flex flex-row gap-2">
-                <button
-                  onclick="toggleModal()"
-                  class="flex-1 bg-slate-900 text-white py-3 px-2 rounded-xl text-xs font-bold hover:bg-slate-800 transition-colors"
+                <a
+                  href="https://pages.razorpay.com/pl_SJVNCTA2lfobIX/view"
+                  target="_blank"
+                  class="flex-1 bg-slate-900 text-white py-3 px-2 rounded-xl text-xs font-bold hover:bg-slate-800 transition-colors text-center"
                 >
                   Select Plan
-                </button>
+                </a>
                 <a
                   href="#contact"
                   class="flex-1 bg-white border-2 border-slate-900 text-slate-900 py-3 px-2 rounded-xl text-xs font-bold text-center hover:bg-slate-50 transition-colors"
@@ -1243,12 +1247,13 @@
                 </li>
               </ul>
               <div class="flex flex-row gap-2">
-                <button
-                  onclick="toggleModal()"
+                <a
+                  target="_blank"
+                  href="https://pages.razorpay.com/pl_G8ARkOJ9ZnLYqf/view"
                   class="flex-1 bg-slate-900 text-white py-4 px-2 rounded-xl text-xs font-bold hover:bg-slate-800 transition-colors"
                 >
                   Select Plan
-                </button>
+                </a>
                 <a
                   href="#contact"
                   class="flex-1 bg-white border-2 border-slate-900 text-slate-900 py-4 px-2 rounded-xl text-xs font-bold text-center hover:bg-slate-50 transition-colors"
@@ -1409,7 +1414,7 @@
                 </div>
               </a>
               <a
-                href="mailto:contact@adstube.in"
+                href="mailto:indiatube06@gmail.com"
                 class="flex items-center gap-6 group"
               >
                 <div
@@ -1429,7 +1434,7 @@
                     Email Us
                   </p>
                   <p class="text-xl font-black text-slate-800">
-                    contact@adstube.in
+                    indiatube06@gmail.com
                   </p>
                 </div>
               </a>
@@ -1555,6 +1560,18 @@
             target="_blank"
             class="hover:text-blue-600"
             >Terms of Service</a
+          >
+          <a
+            href=".//disclaimer.html"
+            target="_blank"
+            class="hover:text-blue-600"
+            >Disclaimer</a
+          >
+          <a
+            href="./refundpolicy.html"
+            target="_blank"
+            class="hover:text-blue-600"
+            >Refund Policy</a
           >
           <a href="#contact" class="hover:text-blue-600">Contact Support</a>
         </div>
