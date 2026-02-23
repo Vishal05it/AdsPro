@@ -473,14 +473,14 @@
             <div
               class="flex items-center gap-7 text-[10px] font-bold text-slate-300 uppercase tracking-[0.2em]"
             >
-              <a href="#features" class="nav-link hover:text-white transition"
-                >Features</a
-              >
               <a href="#about" class="nav-link hover:text-white transition"
                 >About Us</a
               >
               <a href="#why-us" class="nav-link hover:text-white transition"
                 >Why Us</a
+              >
+              <a href="#features" class="nav-link hover:text-white transition"
+                >Features</a
               >
               <a href="#pricing" class="nav-link hover:text-white transition"
                 >Pricing</a
@@ -966,6 +966,7 @@
     </section>
 
     <!-- PRICING -->
+
     <section id="pricing" class="py-24 bg-slate-50">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-16">
@@ -982,9 +983,11 @@
         >
           <!-- Plan A -->
           <div
-            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white"
+            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white border border-slate-100 shadow-sm"
           >
-            <div class="pricing-header-starter text-white text-center py-10">
+            <div
+              class="pricing-header-starter text-white text-center py-10 bg-slate-800"
+            >
               <h4
                 class="text-sm font-black uppercase tracking-widest opacity-80"
               >
@@ -995,26 +998,35 @@
             <div class="p-8 flex flex-col justify-between h-full">
               <ul class="space-y-3 mb-8">
                 <li class="flex items-center text-sm text-slate-600">
-                  <span class="checkmark">✓</span>1,000+ Views
+                  <span class="mr-2 text-green-500">✓</span>1,000+ Views
                 </li>
                 <li class="flex items-center text-sm text-slate-600">
-                  <span class="checkmark">✓</span>Real Audience Reach
+                  <span class="mr-2 text-green-500">✓</span>Real Audience Reach
                 </li>
               </ul>
-              <button
-                onclick="toggleModal()"
-                class="w-full bg-slate-900 text-white py-3 rounded-xl font-bold"
-              >
-                Select Plan
-              </button>
+              <div class="flex flex-row gap-2">
+                <button
+                  onclick="toggleModal()"
+                  class="flex-1 bg-slate-900 text-white py-3 px-2 rounded-xl text-xs font-bold hover:bg-slate-800 transition-colors"
+                >
+                  Select Plan
+                </button>
+                <a
+                  href="#contact"
+                  class="flex-1 bg-white border-2 border-slate-900 text-slate-900 py-3 px-2 rounded-xl text-xs font-bold text-center hover:bg-slate-50 transition-colors"
+                  >Get Info</a
+                >
+              </div>
             </div>
           </div>
 
           <!-- Plan B -->
           <div
-            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white"
+            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white border border-slate-100 shadow-sm"
           >
-            <div class="pricing-header-premium text-white text-center py-10">
+            <div
+              class="pricing-header-premium text-white text-center py-10 bg-blue-600"
+            >
               <h4
                 class="text-sm font-black uppercase tracking-widest opacity-80"
               >
@@ -1025,26 +1037,35 @@
             <div class="p-8 flex flex-col justify-between h-full">
               <ul class="space-y-3 mb-8">
                 <li class="flex items-center text-sm text-slate-600">
-                  <span class="checkmark">✓</span>5,000+ Views
+                  <span class="mr-2 text-green-500">✓</span>5,000+ Views
                 </li>
                 <li class="flex items-center text-sm text-slate-600">
-                  <span class="checkmark">✓</span>Better Reach Boost
+                  <span class="mr-2 text-green-500">✓</span>Better Reach Boost
                 </li>
               </ul>
-              <button
-                onclick="toggleModal()"
-                class="w-full bg-slate-900 text-white py-3 rounded-xl font-bold"
-              >
-                Select Plan
-              </button>
+              <div class="flex flex-row gap-2">
+                <button
+                  onclick="toggleModal()"
+                  class="flex-1 bg-slate-900 text-white py-3 px-2 rounded-xl text-xs font-bold hover:bg-slate-800 transition-colors"
+                >
+                  Select Plan
+                </button>
+                <a
+                  href="#contact"
+                  class="flex-1 bg-white border-2 border-slate-900 text-slate-900 py-3 px-2 rounded-xl text-xs font-bold text-center hover:bg-slate-50 transition-colors"
+                  >Get Info</a
+                >
+              </div>
             </div>
           </div>
 
           <!-- Decision Plan -->
           <div
-            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white"
+            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white border border-slate-100 shadow-sm"
           >
-            <div class="pricing-header-pro text-white text-center py-10">
+            <div
+              class="pricing-header-pro text-white text-center py-10 bg-purple-600"
+            >
               <h4
                 class="text-sm font-black uppercase tracking-widest opacity-80"
               >
@@ -1055,26 +1076,35 @@
             <div class="p-8 flex flex-col justify-between h-full">
               <ul class="space-y-3 mb-8">
                 <li class="flex items-center text-sm text-slate-600">
-                  <span class="checkmark">✓</span>10,000+ Views
+                  <span class="mr-2 text-green-500">✓</span>10,000+ Views
                 </li>
                 <li class="flex items-center text-sm text-slate-600">
-                  <span class="checkmark">✓</span>Strong Visibility
+                  <span class="mr-2 text-green-500">✓</span>Strong Visibility
                 </li>
               </ul>
-              <button
-                onclick="toggleModal()"
-                class="w-full bg-slate-900 text-white py-3 rounded-xl font-bold"
-              >
-                Select Plan
-              </button>
+              <div class="flex flex-row gap-2">
+                <button
+                  onclick="toggleModal()"
+                  class="flex-1 bg-slate-900 text-white py-3 px-2 rounded-xl text-xs font-bold hover:bg-slate-800 transition-colors"
+                >
+                  Select Plan
+                </button>
+                <a
+                  href="#contact"
+                  class="flex-1 bg-white border-2 border-slate-900 text-slate-900 py-3 px-2 rounded-xl text-xs font-bold text-center hover:bg-slate-50 transition-colors"
+                  >Get Info</a
+                >
+              </div>
             </div>
           </div>
 
           <!-- Starting Plan -->
           <div
-            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white"
+            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white border border-slate-100 shadow-sm"
           >
-            <div class="pricing-header-starter text-white text-center py-10">
+            <div
+              class="pricing-header-starter text-white text-center py-10 bg-slate-800"
+            >
               <h4
                 class="text-sm font-black uppercase tracking-widest opacity-80"
               >
@@ -1085,26 +1115,35 @@
             <div class="p-8 flex flex-col justify-between h-full">
               <ul class="space-y-3 mb-8">
                 <li class="flex items-center text-sm text-slate-600">
-                  <span class="checkmark">✓</span>20,000+ Views
+                  <span class="mr-2 text-green-500">✓</span>20,000+ Views
                 </li>
                 <li class="flex items-center text-sm text-slate-600">
-                  <span class="checkmark">✓</span>Growth Boost
+                  <span class="mr-2 text-green-500">✓</span>Growth Boost
                 </li>
               </ul>
-              <button
-                onclick="toggleModal()"
-                class="w-full bg-slate-900 text-white py-3 rounded-xl font-bold"
-              >
-                Select Plan
-              </button>
+              <div class="flex flex-row gap-2">
+                <button
+                  onclick="toggleModal()"
+                  class="flex-1 bg-slate-900 text-white py-3 px-2 rounded-xl text-xs font-bold hover:bg-slate-800 transition-colors"
+                >
+                  Select Plan
+                </button>
+                <a
+                  href="#contact"
+                  class="flex-1 bg-white border-2 border-slate-900 text-slate-900 py-3 px-2 rounded-xl text-xs font-bold text-center hover:bg-slate-50 transition-colors"
+                  >Get Info</a
+                >
+              </div>
             </div>
           </div>
 
           <!-- Walking Plan -->
           <div
-            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white"
+            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white border border-slate-100 shadow-sm"
           >
-            <div class="pricing-header-premium text-white text-center py-10">
+            <div
+              class="pricing-header-premium text-white text-center py-10 bg-blue-600"
+            >
               <h4
                 class="text-sm font-black uppercase tracking-widest opacity-80"
               >
@@ -1115,26 +1154,35 @@
             <div class="p-8 flex flex-col justify-between h-full">
               <ul class="space-y-3 mb-8">
                 <li class="flex items-center text-sm text-slate-600">
-                  <span class="checkmark">✓</span>50,000+ Views
+                  <span class="mr-2 text-green-500">✓</span>50,000+ Views
                 </li>
                 <li class="flex items-center text-sm text-slate-600">
-                  <span class="checkmark">✓</span>High Engagement
+                  <span class="mr-2 text-green-500">✓</span>High Engagement
                 </li>
               </ul>
-              <button
-                onclick="toggleModal()"
-                class="w-full bg-slate-900 text-white py-3 rounded-xl font-bold"
-              >
-                Select Plan
-              </button>
+              <div class="flex flex-row gap-2">
+                <button
+                  onclick="toggleModal()"
+                  class="flex-1 bg-slate-900 text-white py-3 px-2 rounded-xl text-xs font-bold hover:bg-slate-800 transition-colors"
+                >
+                  Select Plan
+                </button>
+                <a
+                  href="#contact"
+                  class="flex-1 bg-white border-2 border-slate-900 text-slate-900 py-3 px-2 rounded-xl text-xs font-bold text-center hover:bg-slate-50 transition-colors"
+                  >Get Info</a
+                >
+              </div>
             </div>
           </div>
 
           <!-- Running Plan -->
           <div
-            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white shadow-2xl"
+            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white shadow-2xl scale-105 border-2 border-cyan-400"
           >
-            <div class="pricing-header-pro text-white text-center py-12">
+            <div
+              class="pricing-header-pro text-white text-center py-12 bg-gradient-to-br from-cyan-500 to-blue-600"
+            >
               <h4
                 class="text-sm font-black uppercase tracking-widest opacity-80"
               >
@@ -1145,26 +1193,35 @@
             <div class="p-8 flex flex-col justify-between h-full">
               <ul class="space-y-3 mb-8">
                 <li class="flex items-center text-sm font-bold text-slate-800">
-                  <span class="checkmark">✓</span>1 Lakh+ Views
+                  <span class="mr-2 text-cyan-500">✓</span>1 Lakh+ Views
                 </li>
                 <li class="flex items-center text-sm font-bold text-slate-800">
-                  <span class="checkmark">✓</span>Mass Reach Campaign
+                  <span class="mr-2 text-cyan-500">✓</span>Mass Reach Campaign
                 </li>
               </ul>
-              <button
-                onclick="toggleModal()"
-                class="w-full btn-gradient text-white py-4 rounded-xl font-black"
-              >
-                Most Popular
-              </button>
+              <div class="flex flex-row gap-2">
+                <button
+                  onclick="toggleModal()"
+                  class="flex-[1.5] bg-gradient-to-r from-cyan-500 to-blue-600 text-white py-4 px-2 rounded-xl text-xs font-black shadow-lg shadow-cyan-200 hover:opacity-90 transition-opacity"
+                >
+                  Select Plan
+                </button>
+                <a
+                  href="#contact"
+                  class="flex-1 bg-white border-2 border-cyan-500 text-cyan-600 py-4 px-2 rounded-xl text-xs font-bold text-center hover:bg-cyan-50 transition-colors"
+                  >Get Info</a
+                >
+              </div>
             </div>
           </div>
 
           <!-- Flying Plan -->
           <div
-            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white"
+            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white border border-slate-100 shadow-sm"
           >
-            <div class="pricing-header-premium text-white text-center py-12">
+            <div
+              class="pricing-header-premium text-white text-center py-12 bg-slate-900"
+            >
               <h4
                 class="text-sm font-black uppercase tracking-widest opacity-80"
               >
@@ -1175,18 +1232,25 @@
             <div class="p-8 flex flex-col justify-between h-full">
               <ul class="space-y-3 mb-8">
                 <li class="flex items-center text-sm text-slate-600">
-                  <span class="checkmark">✓</span>10 Lakh+ Views
+                  <span class="mr-2 text-green-500">✓</span>10 Lakh+ Views
                 </li>
                 <li class="flex items-center text-sm text-slate-600">
-                  <span class="checkmark">✓</span>Maximum Exposure
+                  <span class="mr-2 text-green-500">✓</span>Maximum Exposure
                 </li>
               </ul>
-              <button
-                onclick="toggleModal()"
-                class="w-full bg-slate-900 text-white py-4 rounded-xl font-bold"
-              >
-                Select Plan
-              </button>
+              <div class="flex flex-row gap-2">
+                <button
+                  onclick="toggleModal()"
+                  class="flex-1 bg-slate-900 text-white py-4 px-2 rounded-xl text-xs font-bold hover:bg-slate-800 transition-colors"
+                >
+                  Select Plan
+                </button>
+                <a
+                  href="#contact"
+                  class="flex-1 bg-white border-2 border-slate-900 text-slate-900 py-4 px-2 rounded-xl text-xs font-bold text-center hover:bg-slate-50 transition-colors"
+                  >Get Info</a
+                >
+              </div>
             </div>
           </div>
         </div>
