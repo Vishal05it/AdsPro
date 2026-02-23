@@ -969,7 +969,6 @@
     </section>
 
     <!-- PRICING -->
-
     <section id="pricing" class="py-24 bg-slate-50">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-16">
@@ -981,12 +980,12 @@
           </p>
         </div>
 
-        <div
-          class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 py-5"
-        >
+        <!-- Container for all cards using Flexbox for centering logic -->
+        <div class="flex flex-wrap justify-center gap-8 py-5">
+          <!-- FIRST ROW (4 Cards) -->
           <!-- Plan A -->
           <div
-            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white border border-slate-100 shadow-sm"
+            class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] xl:w-[calc(25%-1.5rem)] glass-card rounded-[40px] overflow-hidden flex flex-col bg-white border border-slate-100 shadow-sm"
           >
             <div
               class="pricing-header-starter text-white text-center py-10 bg-slate-800"
@@ -1012,9 +1011,8 @@
                   href="https://pages.razorpay.com/pl_SJVNCTA2lfobIX/view"
                   target="_blank"
                   class="flex-1 bg-slate-900 text-white py-3 px-2 rounded-xl text-xs font-bold hover:bg-slate-800 transition-colors text-center"
+                  >Select Plan</a
                 >
-                  Select Plan
-                </a>
                 <a
                   href="#contact"
                   class="flex-1 bg-white border-2 border-slate-900 text-slate-900 py-3 px-2 rounded-xl text-xs font-bold text-center hover:bg-slate-50 transition-colors"
@@ -1026,7 +1024,7 @@
 
           <!-- Plan B -->
           <div
-            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white border border-slate-100 shadow-sm"
+            class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] xl:w-[calc(25%-1.5rem)] glass-card rounded-[40px] overflow-hidden flex flex-col bg-white border border-slate-100 shadow-sm"
           >
             <div
               class="pricing-header-premium text-white text-center py-10 bg-blue-600"
@@ -1048,12 +1046,12 @@
                 </li>
               </ul>
               <div class="flex flex-row gap-2">
-                <button
-                  onclick="toggleModal()"
-                  class="flex-1 bg-slate-900 text-white py-3 px-2 rounded-xl text-xs font-bold hover:bg-slate-800 transition-colors"
+                <a
+                  href="https://pages.razorpay.com/pl_SJVSjhCRIHWFeu/view"
+                  target="_blank"
+                  class="flex-1 bg-slate-900 text-white py-3 px-2 rounded-xl text-xs font-bold hover:bg-slate-800 transition-colors text-center"
+                  >Select Plan</a
                 >
-                  Select Plan
-                </button>
                 <a
                   href="#contact"
                   class="flex-1 bg-white border-2 border-slate-900 text-slate-900 py-3 px-2 rounded-xl text-xs font-bold text-center hover:bg-slate-50 transition-colors"
@@ -1065,7 +1063,7 @@
 
           <!-- Decision Plan -->
           <div
-            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white border border-slate-100 shadow-sm"
+            class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] xl:w-[calc(25%-1.5rem)] glass-card rounded-[40px] overflow-hidden flex flex-col bg-white border border-slate-100 shadow-sm"
           >
             <div
               class="pricing-header-pro text-white text-center py-10 bg-purple-600"
@@ -1091,9 +1089,8 @@
                   href="https://pages.razorpay.com/pl_G8A2GVV9XApnNm/view"
                   target="_blank"
                   class="flex-1 bg-slate-900 text-white py-3 px-2 rounded-xl text-xs font-bold hover:bg-slate-800 transition-colors text-center"
+                  >Select Plan</a
                 >
-                  Select Plan
-                </a>
                 <a
                   href="#contact"
                   class="flex-1 bg-white border-2 border-slate-900 text-slate-900 py-3 px-2 rounded-xl text-xs font-bold text-center hover:bg-slate-50 transition-colors"
@@ -1105,7 +1102,7 @@
 
           <!-- Starting Plan -->
           <div
-            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white border border-slate-100 shadow-sm"
+            class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] xl:w-[calc(25%-1.5rem)] glass-card rounded-[40px] overflow-hidden flex flex-col bg-white border border-slate-100 shadow-sm"
           >
             <div
               class="pricing-header-starter text-white text-center py-10 bg-slate-800"
@@ -1128,12 +1125,11 @@
               </ul>
               <div class="flex flex-row gap-2">
                 <a
-                  target="_blank"
                   href="https://pages.razorpay.com/pl_G8A4YhAQiFibDZ/view"
+                  target="_blank"
                   class="flex-1 bg-slate-900 text-white py-3 px-2 rounded-xl text-xs font-bold hover:bg-slate-800 transition-colors text-center"
+                  >Select Plan</a
                 >
-                  Select Plan
-                </a>
                 <a
                   href="#contact"
                   class="flex-1 bg-white border-2 border-slate-900 text-slate-900 py-3 px-2 rounded-xl text-xs font-bold text-center hover:bg-slate-50 transition-colors"
@@ -1143,9 +1139,10 @@
             </div>
           </div>
 
+          <!-- SECOND ROW (3 Cards) -->
           <!-- Walking Plan -->
           <div
-            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white border border-slate-100 shadow-sm"
+            class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] xl:w-[calc(25%-1.5rem)] glass-card rounded-[40px] overflow-hidden flex flex-col bg-white border border-slate-100 shadow-sm"
           >
             <div
               class="pricing-header-premium text-white text-center py-10 bg-blue-600"
@@ -1168,12 +1165,11 @@
               </ul>
               <div class="flex flex-row gap-2">
                 <a
-                  target="_blank"
                   href="https://pages.razorpay.com/pl_G8AFDjbAYtr7Oc/view"
+                  target="_blank"
                   class="flex-1 bg-slate-900 text-white py-3 px-2 rounded-xl text-xs font-bold hover:bg-slate-800 transition-colors text-center"
+                  >Select Plan</a
                 >
-                  Select Plan
-                </a>
                 <a
                   href="#contact"
                   class="flex-1 bg-white border-2 border-slate-900 text-slate-900 py-3 px-2 rounded-xl text-xs font-bold text-center hover:bg-slate-50 transition-colors"
@@ -1183,9 +1179,9 @@
             </div>
           </div>
 
-          <!-- Running Plan -->
+          <!-- Running Plan (Highlighted) -->
           <div
-            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white shadow-2xl scale-105 border-2 border-cyan-400"
+            class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] xl:w-[calc(25%-1.5rem)] glass-card rounded-[40px] overflow-hidden flex flex-col bg-white shadow-2xl scale-105 border-2 border-cyan-400 z-10"
           >
             <div
               class="pricing-header-pro text-white text-center py-12 bg-gradient-to-br from-cyan-500 to-blue-600"
@@ -1211,9 +1207,8 @@
                   href="https://pages.razorpay.com/pl_G8AKWGQimIHE8g/view"
                   target="_blank"
                   class="flex-[1.5] text-center bg-gradient-to-r from-cyan-500 to-blue-600 text-white py-4 px-2 rounded-xl text-xs font-black shadow-lg shadow-cyan-200 hover:opacity-90 transition-opacity"
+                  >Select Plan</a
                 >
-                  Select Plan
-                </a>
                 <a
                   href="#contact"
                   class="flex-1 bg-white border-2 border-cyan-500 text-cyan-600 py-4 px-2 rounded-xl text-xs font-bold text-center hover:bg-cyan-50 transition-colors"
@@ -1225,7 +1220,7 @@
 
           <!-- Flying Plan -->
           <div
-            class="glass-card rounded-[40px] overflow-hidden flex flex-col bg-white border border-slate-100 shadow-sm"
+            class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] xl:w-[calc(25%-1.5rem)] glass-card rounded-[40px] overflow-hidden flex flex-col bg-white border border-slate-100 shadow-sm"
           >
             <div
               class="pricing-header-premium text-white text-center py-12 bg-slate-900"
@@ -1248,12 +1243,11 @@
               </ul>
               <div class="flex flex-row gap-2">
                 <a
-                  target="_blank"
                   href="https://pages.razorpay.com/pl_G8ARkOJ9ZnLYqf/view"
+                  target="_blank"
                   class="flex-1 bg-slate-900 text-white py-4 px-2 rounded-xl text-xs font-bold hover:bg-slate-800 transition-colors text-center"
+                  >Select Plan</a
                 >
-                  Select Plan
-                </a>
                 <a
                   href="#contact"
                   class="flex-1 bg-white border-2 border-slate-900 text-slate-900 py-4 px-2 rounded-xl text-xs font-bold text-center hover:bg-slate-50 transition-colors"
@@ -1546,7 +1540,8 @@
       <div class="max-w-7xl mx-auto px-4">
         <div class="text-xl font-bold gradient-text mb-4">AdsPro</div>
         <p class="text-slate-500 text-sm mb-8">
-          © 2026 AdsPro Digital Agency. All rights reserved.
+          © AdsPro | Independent YouTube Promotion Agency | Not affiliated with
+          YouTube or Google LLC
         </p>
         <div class="flex justify-center space-x-6 text-slate-400 text-sm">
           <a
