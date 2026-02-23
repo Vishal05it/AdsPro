@@ -504,7 +504,7 @@
           </div>
 
           <!-- Mobile Menu Button -->
-          <button class="lg:hidden text-white p-2">
+          <button onclick="toggleSidebar()" class="lg:hidden text-white p-2">
             <svg
               class="w-6 h-6"
               fill="none"
@@ -515,11 +515,98 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M4 6h16M4 12H8m0 6h16"
-              ></path>
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           </button>
         </nav>
+        <!-- MOBILE SIDEBAR OVERLAY -->
+        <div
+          id="sidebarOverlay"
+          onclick="toggleSidebar()"
+          class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[60] opacity-0 pointer-events-none transition-all duration-300"
+        ></div>
+
+        <!-- MOBILE SIDEBAR -->
+        <aside
+          id="mobileSidebar"
+          class="fixed top-0 right-0 h-full w-[280px] glass-nav z-[70] translate-x-full transition-transform duration-300 shadow-2xl flex flex-col"
+        >
+          <!-- Header -->
+          <div
+            class="flex justify-between items-center p-6 border-b border-white/10"
+          >
+            <span class="text-white font-black text-lg">Menu</span>
+
+            <button onclick="toggleSidebar()" class="text-white">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Links -->
+          <div
+            class="flex flex-col p-6 space-y-4 text-white font-bold text-sm uppercase tracking-wider"
+          >
+            <a
+              href="#features"
+              onclick="toggleSidebar()"
+              class="hover:text-cyan-400 transition"
+              >Features</a
+            >
+            <a
+              href="#about"
+              onclick="toggleSidebar()"
+              class="hover:text-cyan-400 transition"
+              >About</a
+            >
+            <a
+              href="#why-us"
+              onclick="toggleSidebar()"
+              class="hover:text-cyan-400 transition"
+              >Why Us</a
+            >
+            <a
+              href="#pricing"
+              onclick="toggleSidebar()"
+              class="hover:text-cyan-400 transition"
+              >Pricing</a
+            >
+            <a
+              href="#faq"
+              onclick="toggleSidebar()"
+              class="hover:text-cyan-400 transition"
+              >FAQ</a
+            >
+            <a
+              href="#contact"
+              onclick="toggleSidebar()"
+              class="hover:text-cyan-400 transition"
+              >Contact</a
+            >
+
+            <button
+              onclick="
+                toggleModal();
+                toggleSidebar();
+              "
+              class="mt-4 btn-gradient py-3 rounded-xl text-center font-black"
+            >
+              Inquire Now
+            </button>
+          </div>
+        </aside>
       </div>
 
       <div
@@ -1557,6 +1644,34 @@
       //   section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
       //   observer.observe(section);
       // });
+    </script>
+    <script>
+      function toggleSidebar() {
+        const sidebar = document.getElementById("mobileSidebar");
+        const overlay = document.getElementById("sidebarOverlay");
+
+        const isOpen = sidebar.classList.contains("translate-x-0");
+
+        if (isOpen) {
+          sidebar.classList.remove("translate-x-0");
+          sidebar.classList.add("translate-x-full");
+
+          overlay.classList.remove("opacity-100");
+          overlay.classList.add("opacity-0");
+          overlay.classList.add("pointer-events-none");
+
+          document.body.style.overflow = "";
+        } else {
+          sidebar.classList.remove("translate-x-full");
+          sidebar.classList.add("translate-x-0");
+
+          overlay.classList.remove("opacity-0");
+          overlay.classList.add("opacity-100");
+          overlay.classList.remove("pointer-events-none");
+
+          document.body.style.overflow = "hidden";
+        }
+      }
     </script>
   </body>
 </html>
